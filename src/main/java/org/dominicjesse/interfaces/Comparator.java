@@ -1,6 +1,6 @@
 package org.dominicjesse.interfaces;
 
-import org.dominicjesse.models.Person;
+//import org.dominicjesse.models.Person;
 
 import java.util.function.Function;
 
@@ -8,10 +8,6 @@ import java.util.function.Function;
 public interface Comparator<T> {
 
     public int compare(T t1, T t2);
-
-   // public default Comparator<T> thenComparing(Comparator<T> cmp) {
-   //     return (p1, p2) -> compare(p1, p2) == 0 ? cmp.compare(p1, p2) : compare(p1, p2);
-   // }
 
     //PART 1 THENCOMPARE - return either the comparator's compare or this interface's as default
    public default Comparator<T> thenComparing(Comparator<T> cmp) {
@@ -27,15 +23,10 @@ public interface Comparator<T> {
     }
 
 
-    //DRAFT 1 COMPARING - static function that takes in function, applies it to 2 persons, and returns the comparison
-    //Comparable = String and Intgeger; U = Person
+    //COMPARING - static function that takes in function, applies it to 2 persons, and returns the comparison
+    //Comparable = String and Integer; U = Person
     public static <U> Comparator<U> comparing(Function<U, Comparable> f) {
         //call above compare
         return (p1, p2) -> f.apply(p1).compareTo(f.apply(p2));
     }
-
-
-    //public static <U> Comparator<U> comparing(Function<U, Comparable> f) {
-    //    return (p1, p2) -> f.apply(p1).compareTo(f.apply(p2));
-   // }
 }
