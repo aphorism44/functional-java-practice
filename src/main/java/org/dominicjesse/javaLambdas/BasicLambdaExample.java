@@ -1,4 +1,4 @@
-package org.dominicjesse.javaUtilFunctionIntro;
+package org.dominicjesse.javaLambdas;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;

@@ -1,4 +1,4 @@
-package org.dominicjesse.javaUtilFunctionIntro;
+package org.dominicjesse.javaLambdas;
 
 
 import org.dominicjesse.models.User;

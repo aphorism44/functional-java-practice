@@ -1,4 +1,4 @@
-package org.dominicjesse.javaUtilFunctionIntro;
+package org.dominicjesse.javaLambdas;
 
 import java.util.function.DoubleToIntFunction;
 import java.util.function.IntSupplier;
