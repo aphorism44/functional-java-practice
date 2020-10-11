@@ -1,8 +1,7 @@
 package org.dominicjesse;
 
 
-import org.dominicjesse.javaCollectStreams.LambdaDataProcessing;
-import org.dominicjesse.javaCollectStreams.Lambdas;
+import org.dominicjesse.javaCollectStreams.TestFakePredicate;
 
 /**
  * Hello world!
@@ -24,8 +23,10 @@ public class Main
         //below examples: Pluralsight course
         //"From Collections to Streams in Java 8 using Lambda Expressions" (package: javaCollectStreams)
         //by Jose Paumard
-        Lambdas.runExamples();
-        LambdaDataProcessing.runExamples();
-
+        /*
+        TestFakeComparator.runExamples();
+        LambdaReview.runExamples();
+        TestFakePredicate.runExamples();
+        */
     }
 }

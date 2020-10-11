@@ -1,6 +1,10 @@
 package org.dominicjesse.interfaces;
 
 //import org.dominicjesse.models.Person;
+/*
+NOTE - this is a simplified version of java.util.function.Comparator
+, used to illustrate how they work
+ */
 
 import java.util.function.Function;
 

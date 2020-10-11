@@ -8,7 +8,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-public class Lambdas {
+public class TestFakeComparator {
 
     public static void runExamples() {
 
@@ -23,7 +23,7 @@ public class Lambdas {
         Consumer<String> printString = System.out::println;
         printString.accept("hello method reference");
 
-        //below is the interface exercise - see "Compatator" class in interfaces package
+        //below is the interface exercise - see "Comparator" class in interfaces package
         //this is the initial Comparator exercise - we watch it go into the new Comparator
         //essentially, a new API
         Comparator<Person> cAge = (p1, p2) -> p2.getAge() - p1.getAge();
@@ -33,12 +33,12 @@ public class Lambdas {
         Function<Person, Integer> gAge = Person::getAge;
         Function<Person, String> gFN = Person::getFirstName;
         Function<Person, String> gLN = Person::getLastName;
-        //now wrote Comparitors using the above functions, but look to new interface
+        //now wrote Comparators using the above functions, but look to new interface
         Comparator<Person> cAge2 = Comparator.comparing(Person::getAge);
         Comparator<Person> cFName2 = Comparator.comparing(Person::getFirstName);
         Comparator<Person> cLName2 = Comparator.comparing(Person::getLastName);
         //thenComparing needs interface update - takes in/returns Comparator<Person>
-        Comparator<Person> personCmp = cLName2.thenComparing(cFName2);
+        Comparator<Person> personCmp = cLName2.thenComparing(cFName2).thenComparing(cAge2);
         //now change thenComparing to take a function and comparable
         Comparator<Person> cmp = Comparator.comparing(Person::getLastName)
                 .thenComparing(Person::getFirstName)
