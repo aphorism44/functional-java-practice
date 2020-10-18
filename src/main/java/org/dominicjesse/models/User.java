@@ -17,6 +17,6 @@ public class User {
     public void setAge(int a) { age = a; };
 
     @Override
-    public String toString() { return getName(); }
+    public String toString() { return getName() + "," + getAge(); }
 
 }

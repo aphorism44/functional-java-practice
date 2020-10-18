@@ -1,6 +1,8 @@
 package org.dominicjesse;
 
 
+import org.dominicjesse.javaCollectStreams.CollectionsLambda;
+import org.dominicjesse.javaCollectStreams.MapFilterReduce;
 import org.dominicjesse.javaCollectStreams.TestFakePredicate;
 
 /**
@@ -27,6 +29,11 @@ public class Main
         TestFakeComparator.runExamples();
         LambdaReview.runExamples();
         TestFakePredicate.runExamples();
+        CollectionsLambda.testListExamples();
+        CollectionsLambda.testMapExamples();
+        CollectionsLambda.testLiveCode();
         */
+        MapFilterReduce.runExamples();
+
     }
 }
