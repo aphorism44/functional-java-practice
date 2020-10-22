@@ -1,9 +1,9 @@
 package org.dominicjesse;
 
 
-import org.dominicjesse.javaCollectStreams.CollectionsLambda;
-import org.dominicjesse.javaCollectStreams.MapFilterReduce;
-import org.dominicjesse.javaCollectStreams.TestFakePredicate;
+import org.dominicjesse.KnowledgeShare.SimpleLambdaExample;
+import org.dominicjesse.javaCollectStreams.ReduceSimulation;
+import org.dominicjesse.javaCollectStreams.Streams;
 
 /**
  * Hello world!
@@ -32,8 +32,11 @@ public class Main
         CollectionsLambda.testListExamples();
         CollectionsLambda.testMapExamples();
         CollectionsLambda.testLiveCode();
+        ReduceSimulation.runExamples();
+        Streams.runStreamExamples();
+        Streams.runMapFilterReduce();
+        SimpleLambdaExample.runExample();
         */
-        MapFilterReduce.runExamples();
-
+        
     }
 }
