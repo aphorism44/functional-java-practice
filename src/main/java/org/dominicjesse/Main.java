@@ -4,6 +4,8 @@ package org.dominicjesse;
 import org.dominicjesse.KnowledgeShare.SimpleLambdaExample;
 import org.dominicjesse.javaCollectStreams.ReduceSimulation;
 import org.dominicjesse.javaCollectStreams.Streams;
+import org.dominicjesse.javaFunctional.ReuseFunctions;
+import org.dominicjesse.javaFunctional.RewriteSimpleExample;
 
 /**
  * Hello world!
@@ -37,6 +39,13 @@ public class Main
         Streams.runMapFilterReduce();
         SimpleLambdaExample.runExample();
         */
-        
+        //below examples: Pluralsight course
+        //"Applying Functional Programming Techniques in Java" (package: javaFunctional)
+        //by Esteban Herrera
+        RewriteSimpleExample.runExamples();
+        ReuseFunctions.runExamples();
+
+
+
     }
 }
